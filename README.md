@@ -72,9 +72,11 @@ The Plan:
    | SD card: I'll probably use 16Gb cards which go for under | C$ **10.00** |
    | [Power Supply](https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/) | C$ **9.95** |
    | [USB-C enclosure support](https://www.mouser.ca/ProductDetail/CUI-Devices/UJ20-C-H-G-SMT-TR?qs=vvQtp7zwQdMB%2FjSfD6wTAw%3D%3D) | C$ **2.02** | 
+   | Buttons, Switches, jumper cables | C$ **15.00** |
+   | Shipping not included in any prices maybe another ? | C$ **60.00** |
 
 
-   *Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **345***
+   *Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **420***
      
 That's of course not counting the time bulding, designing the enclosure and doing all the coding - but that's where the fun comes in!
 
@@ -221,4 +223,45 @@ That's of course not counting the time bulding, designing the enclosure and doin
   
 - **Integration with Smart Home Devices**:
   - Future option to integrate with platforms like **Google Home**, **Amazon Alexa**, or **IFTTT** to control alarms and music through voice commands or automation.
+
+## To Do
+
+### 1. Hardware Setup
+- [ ] Acquire hardware
+- [ ] Assemble Raspberry Pi Zero 2 W, e-paper display, ReSpeaker HAT, UPS HAT, buttons, and switches.
+- [ ] Set up Raspberry Pi OS.
+- [ ] Install necessary drivers and libraries for e-paper, audio HAT, and buttons.
+- [ ] Test each hardware component individually.
+
+### 2. Timekeeping and Display
+- [ ] Set up NTP synchronization for timekeeping.
+- [ ] Implement manual time adjustment with buttons for offline mode.
+- [ ] Design e-paper display layout for clock face and alarm times.
+- [ ] Implement button functionality to switch between time and alarm modes.
+- [ ] Test UPS backup to ensure time is not lost during power outages.
+
+### 3. Wi-Fi Setup and Web Interface
+- [ ] Implement Wi-Fi setup using AP mode and QR code generation.
+- [ ] Develop a simple web interface (using Flask/Django) for Wi-Fi setup.
+- [ ] Create web interface for alarm management and audio customization.
+- [ ] Add functionality to reboot clock, reset to factory defaults, and change settings.
+
+### 4. Alarm and Audio Management
+- [ ] Implement core alarm logic (set, snooze, stop).
+- [ ] Integrate support for streaming services (Spotify, Apple Music, etc.).
+- [ ] Add support for custom audio uploads (e.g., MP3, WAV).
+- [ ] Customize per-alarm settings (different tones for each alarm).
+- [ ] Test audio quality with the ReSpeaker HAT.
+
+### 5. Power Management and Backup
+- [ ] Test UPS HAT to ensure clock operates during power outages.
+- [ ] Display power source status (main power vs UPS).
+- [ ] Test low battery notifications.
+
+### 6. User Experience and Polishing
+- [ ] Add easter eggs (hidden messages, sounds, etc.).
+- [ ] Refine the web interface with extra settings (e.g., NTP toggle, locale setup).
+- [ ] Implement system opt-in for tracking clocks in service (disabled by default).
+- [ ] Final testing and bug fixing for smooth user experience.
+
 
