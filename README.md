@@ -224,7 +224,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - **Integration with Smart Home Devices**:
   - Future option to integrate with platforms like **Google Home**, **Amazon Alexa**, or **IFTTT** to control alarms and music through voice commands or automation.
  
-# Mørk Natt Project Plan
+# Project Plan
 
 ## 1. Implement Manual Time Adjustment with Buttons for Offline Mode
 - **Objective:** Allow users to set the time manually if there’s no Wi-Fi connection.
@@ -296,6 +296,17 @@ That's of course not counting the time bulding, designing the enclosure and doin
   - **Database vs. Plaintext:** A lightweight database (like SQLite) is preferred over plaintext for managing alarm settings, as it provides better structure and querying capabilities.
   - **Implementation:** Load and save alarm settings from/to the database. Ensure the system reads these settings correctly at runtime.
 
+### Per-Alarm Settings:
+- **Repetition Options:**
+  - Once-off (deleted after being executed)
+  - Daily
+  - Weekly
+  - Monthly
+  - Yearly
+  - Weekdays
+  - Weekends
+  - Custom options (e.g., every 2nd Tuesday and Thursday, 3rd Friday of every month, annually on January 7th when it falls on a Tuesday)
+
 ## 11. Add Easter Eggs (Hidden Messages, Sounds, etc.)
 - **Objective:** Add fun and engaging features to the clock.
 - **Approach:**
@@ -309,12 +320,20 @@ That's of course not counting the time bulding, designing the enclosure and doin
   - **Tracking Mechanism:** Collect data (e.g., IP addresses) only from users who opt-in.
   - **Data Display:** Show aggregate data on a separate admin interface or dashboard.
 
-## Additional Considerations
+## Additional Features
 
-- **User Interface (Light/Dark Mode):**
-  - **Timing:** Implement light/dark mode as part of the web interface design.
-  - **Approach:** Use CSS media queries or a toggle switch in the interface to switch between light and dark themes. Store user preferences using cookies or local storage.
+### Clock Display Options
+- **Default:** Smaller time font with space for icons denoting power source, alarms, and warnings.
+- **Non-default 1:** Full time display with the largest possible time readout, no space for status icons.
+- **Non-default 2:** Smaller time display with icons and the time of the next alarm.
 
+### Alarm Display Options
+- **Inverted Alarm Display:** Alarm time displayed with a black background and white text.
+- **Non-inverted Alarm Display:** Standard alarm time display without inversion.
+
+### User Interface Theme (Light/Dark Mode)
+- **Timing:** Implement light/dark mode as part of the web interface design.
+- **Approach:** Use CSS media queries or a toggle switch in the interface to switch between light and dark themes. Store user preferences using cookies or local storage.
 
 # To Do
 
@@ -355,3 +374,28 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - [ ] Refine the web interface with extra settings (e.g., NTP toggle, locale setup).
 - [ ] Implement system opt-in for tracking clocks in service (disabled by default).
 - [ ] Final testing and bug fixing for smooth user experience.
+
+### 7. Clock Display Options
+- [ ] Implement display options:
+  - [ ] Default: Smaller time font with space for icons denoting power source and alarms.
+  - [ ] Non-default 1: Full time display with largest possible time readout, no space for status icons.
+  - [ ] Non-default 2: Smaller time display with icons and the time of the next alarm.
+
+### 8. Alarm Display Options
+- [ ] Implement alarm display options:
+  - [ ] Inverted Alarm Display: Black background with white text.
+  - [ ] Non-inverted Alarm Display: Standard display without inversion.
+
+### 9. Alarm Repetition Settings
+- [ ] Implement options for alarm repetition:
+  - [ ] Once-off
+  - [ ] Daily
+  - [ ] Weekly
+  - [ ] Monthly
+  - [ ] Yearly
+  - [ ] Weekdays
+  - [ ] Weekends
+  - [ ] Custom options (e.g., every 2nd Tuesday and Thursday, 3rd Friday of every month, annually on January 7th when it falls on a Tuesday)
+
+### 10. User Interface Theme
+- [ ] Implement light/dark mode toggle for the web interface.
