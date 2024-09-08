@@ -75,16 +75,16 @@ The Plan:
    | Buttons, Switches, jumper cables | C$ **15.00** |
    | Shipping not included in any prices maybe another ? | C$ **60.00** |
 
+   *Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **420***
+     
+That's of course not counting the time bulding, designing the enclosure and doing all the coding - but that's where the fun comes in!
+
 ### Concept Art
 ![time0](https://github.com/user-attachments/assets/cb08ade6-14f7-413d-bab3-69c90175048c)  
 ![time1](https://github.com/user-attachments/assets/4eab898b-49a3-438a-8f35-59c3c1366e16)  
 ![time2](https://github.com/user-attachments/assets/66b1492a-a67d-45c3-8ad7-83b0af6aea52)  
 ![invert](https://github.com/user-attachments/assets/c2e2ae54-4b6a-4836-ab6c-66093f9a3276)  
 
-
-   *Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **420***
-     
-That's of course not counting the time bulding, designing the enclosure and doing all the coding - but that's where the fun comes in!
 
 # Wi-Fi Setup Flowchart
 
