@@ -4,9 +4,9 @@ Mørk natt is Norwegian that translates into "Dark night"
 
 https://github.com/user-attachments/assets/9e299e63-a6f7-4f7b-ad3c-f0894cde03f0
 
-(it's just audo)
+(it's just audio)
 
-The Plan:
+The Plan: Not have cellphones in the bedroom. So I have to have a clock that can be an alarm clock with lots of functionality and NO LIGHT!
 
 # Bedside Alarm Clock Design
 
