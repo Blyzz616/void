@@ -61,17 +61,20 @@ The Plan:
    - **Manual Time Adjustment**: If no internet is available, Buttons E and F will be used to manually set the time.
 
 ### Expected Investment:
-   - [Raspberry Pi Zero 2 W ](https://www.pishop.ca/product/raspberry-pi-zero-2-w/?src=raspberrypi): C$: **21.00**
-   - [ePaper Display](https://www.waveshare.com/product/displays/e-paper/5.79inch-e-paper-module.htm): C$ **38.00**
-   - [ReSpeaker 2-Mics Pi Hat](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT.html): C$ **17.50**
-   - [Pi UPS](https://www.pishop.ca/product/uninterruptible-power-supply-ups-hat-for-raspberry-pi-zero-stable-5v-power-output/): C$ **33.95**
-   - Enclosure: 3D printed. Probably going to go through multiple iterations so maybe around: C$ **40.00**
-   - SD card: I'll probably use 16Gb cards which go for under: C$ **10.00**
-   - [Power Supply](https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/): C$ **9.95**
-   - [USB-C enclosure support](https://www.mouser.ca/ProductDetail/CUI-Devices/UJ20-C-H-G-SMT-TR?qs=vvQtp7zwQdMB%2FjSfD6wTAw%3D%3D): C$ **2.02**
+   
+   | Item  | Cost |
+   | ------------- | ------------- |
+   | [Raspberry Pi Zero 2 W ](https://www.pishop.ca/product/raspberry-pi-zero-2-w/?src=raspberrypi) | C$: **21.00** |
+   | [ePaper Display](https://www.waveshare.com/product/displays/e-paper/5.79inch-e-paper-module.htm) | C$ **38.00** |
+   | [ReSpeaker 2-Mics Pi Hat](https://www.seeedstudio.com/ReSpeaker-2-Mics-Pi-HAT.html) | C$ **17.50** |
+   | [Pi UPS](https://www.pishop.ca/product/uninterruptible-power-supply-ups-hat-for-raspberry-pi-zero-stable-5v-power-output/) | C$ **33.95** |
+   | Enclosure: 3D printed. Probably going to go through multiple iterations so maybe around | C$ **40.00** |
+   | SD card: I'll probably use 16Gb cards which go for under | C$ **10.00** |
+   | [Power Supply](https://www.pishop.ca/product/usb-c-power-supply-5-1v-3-0a-black-ul-listed/) | C$ **9.95** |
+   | [USB-C enclosure support](https://www.mouser.ca/ProductDetail/CUI-Devices/UJ20-C-H-G-SMT-TR?qs=vvQtp7zwQdMB%2FjSfD6wTAw%3D%3D) | C$ **2.02** | 
 
 
-     Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **345**
+   *Including 12% tax, for 2x, no-light, fully customisable, bed-side alarm clocks, that should bring the total to around C$ **345***
      
 That's of course not counting the time bulding, designing the enclosure and doing all the coding - but that's where the fun comes in!
 
