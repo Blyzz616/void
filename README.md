@@ -223,8 +223,100 @@ That's of course not counting the time bulding, designing the enclosure and doin
   
 - **Integration with Smart Home Devices**:
   - Future option to integrate with platforms like **Google Home**, **Amazon Alexa**, or **IFTTT** to control alarms and music through voice commands or automation.
+ 
+# Mørk Natt Project Plan
 
-## To Do
+## 1. Implement Manual Time Adjustment with Buttons for Offline Mode
+- **Objective:** Allow users to set the time manually if there’s no Wi-Fi connection.
+- **Approach:**
+  - **Button Mapping:** Assign specific functions to buttons E (+) and F (-) for adjusting time.
+  - **State Management:** Implement a state machine or flag to switch between normal and manual time settings.
+  - **UI Feedback:** Display instructions on the e-paper screen to guide users through manual time setting.
+
+## 2. Implement Button Functionality to Switch Between Time and Alarm Modes
+- **Objective:** Enable users to switch between viewing the current time and setting/adjusting alarms.
+- **Approach:**
+  - **Button Mapping:** Assign a button (e.g., Button C) to toggle between time mode and alarm mode.
+  - **Display Updates:** Update the e-paper display based on the current mode. Use clear visual indicators for the mode.
+
+## 3. Implement Wi-Fi Setup Using AP Mode and QR Code Generation
+- **Objective:** Allow users to configure Wi-Fi settings via a mobile device.
+- **Approach:**
+  - **AP Mode:** Enable Access Point mode on the Raspberry Pi so it can be discovered by mobile devices.
+  - **QR Code Generation:** Use a Python library (like `qrcode`) to generate a QR code with the Pi’s AP credentials.
+  - **Instructions:** Display a message on the e-paper screen guiding users to scan the QR code.
+
+## 4. Develop a Simple Web Interface for Wi-Fi Setup (Flask/Django)
+- **Objective:** Provide a user-friendly interface for Wi-Fi setup and configuration.
+- **Approach:**
+  - **Framework Choice:** Use Flask for simplicity, especially for a lightweight application. Django is more robust but may be overkill for this task.
+  - **UI Components:** Create forms for selecting Wi-Fi networks and entering passwords.
+  - **Backend:** Implement endpoints to handle Wi-Fi configuration and store user inputs.
+  - **Deployment:** Ensure the web interface runs on the Raspberry Pi and is accessible when the Pi is in AP mode.
+
+## 5. Create Web Interface for Alarm Management and Audio Customization
+- **Objective:** Allow users to manage alarms and customize audio settings via a web interface.
+- **Approach:**
+  - **Alarm Management:** Provide forms for setting, editing, and deleting alarms.
+  - **Audio Customization:** Allow users to upload audio files and select tones from predefined options.
+  - **Integration:** Link these settings to the backend logic that controls alarm behavior and audio playback.
+
+## 6. Add Functionality to Reboot Clock, Reset to Factory Defaults, and Change Settings
+- **Objective:** Enable users to reboot the device, restore factory settings, and adjust system settings.
+- **Approach:**
+  - **Reboot:** Implement a backend function to reboot the Pi, accessible via the web interface.
+  - **Factory Reset:** Develop a script that restores default settings and clears user data.
+  - **Settings Management:** Create forms or toggles for adjusting system settings. Ensure changes are saved and applied correctly.
+
+## 7. Implement Core Alarm Logic (Set, Snooze, Stop)
+- **Objective:** Ensure the alarm functionality is robust and responsive.
+- **Approach:**
+  - **Alarm Scheduling:** Use Python’s scheduling libraries to handle alarm times and triggers.
+  - **Button Integration:** Map button presses to snooze and stop functionalities.
+  - **Audio Playback:** Integrate audio playback with alarm triggers.
+
+## 8. Integrate Support for Streaming Services
+- **Objective:** Allow alarms to use music from streaming services.
+- **Approach:**
+  - **APIs:** Research APIs provided by services like Spotify and Apple Music. For Spotify, use the Spotify Web API; for Apple Music, use the Apple Music API.
+  - **Authentication:** Implement OAuth for secure user authentication.
+  - **Integration:** Use the APIs to fetch and play songs or playlists. Handle API requests and responses in Python.
+
+## 9. Add Support for Custom Audio Uploads (e.g., MP3, WAV)
+- **Objective:** Let users upload their own audio files for alarms.
+- **Approach:**
+  - **File Upload:** Create a web form for file uploads.
+  - **File Handling:** Store uploaded files in a specific directory on the Pi and integrate them into the alarm system.
+  - **Validation:** Ensure that uploaded files are of acceptable formats and sizes.
+
+## 10. Customize Per-Alarm Settings (Different Tones for Each Alarm)
+- **Objective:** Provide flexibility in alarm tone settings.
+- **Approach:**
+  - **Storage:** Use a structured format like JSON for saving alarm settings (time, tone, snooze duration).
+  - **Database vs. Plaintext:** A lightweight database (like SQLite) is preferred over plaintext for managing alarm settings, as it provides better structure and querying capabilities.
+  - **Implementation:** Load and save alarm settings from/to the database. Ensure the system reads these settings correctly at runtime.
+
+## 11. Add Easter Eggs (Hidden Messages, Sounds, etc.)
+- **Objective:** Add fun and engaging features to the clock.
+- **Approach:**
+  - **Hidden Features:** Implement special modes or messages that trigger under specific conditions (e.g., long-pressing a button).
+  - **Randomization:** Use random functions to trigger Easter eggs, making them feel less predictable.
+
+## 12. Implement System Opt-In for Tracking Clocks in Service (Disabled by Default)
+- **Objective:** Optionally track the number of clocks in service for analytics or support.
+- **Approach:**
+  - **Opt-In Feature:** Add a checkbox or toggle in the web interface for users to opt-in.
+  - **Tracking Mechanism:** Collect data (e.g., IP addresses) only from users who opt-in.
+  - **Data Display:** Show aggregate data on a separate admin interface or dashboard.
+
+## Additional Considerations
+
+- **User Interface (Light/Dark Mode):**
+  - **Timing:** Implement light/dark mode as part of the web interface design.
+  - **Approach:** Use CSS media queries or a toggle switch in the interface to switch between light and dark themes. Store user preferences using cookies or local storage.
+
+
+# To Do
 
 ### 1. Hardware Setup
 - [ ] Acquire hardware
@@ -263,5 +355,3 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - [ ] Refine the web interface with extra settings (e.g., NTP toggle, locale setup).
 - [ ] Implement system opt-in for tracking clocks in service (disabled by default).
 - [ ] Final testing and bug fixing for smooth user experience.
-
-
