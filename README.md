@@ -1,10 +1,7 @@
-# Mørk natt
+# .void
 
-Mørk natt is Norwegian that translates into "Dark night"
-
-https://github.com/user-attachments/assets/9e299e63-a6f7-4f7b-ad3c-f0894cde03f0
-
-(it's just audio)
+Alternae name: devnull  
+Don't you hate it when you can't think of a good name for a project? and then BANG! 2 good ones and no way to choose!  
 
 The Plan: Not have cellphones in the bedroom. So I have to have a clock that can be an alarm clock with lots of functionality and NO LIGHT!
 
