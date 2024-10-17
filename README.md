@@ -90,7 +90,11 @@ That's of course not counting the time bulding, designing the enclosure and doin
 
 ## 1. On Boot/Power-On:
 - **Check for saved Wi-Fi network:**
-  - **If connected:** Proceed with normal operation (NTP sync, locale set via timezone).
+  - **If connected:** Proceed with normal operation
+     - Check for system updates
+        - If new update available, display on screen.
+     - NTP Sync
+     - Get time display immediately
   - **If not connected:**
     - **Step 1: Scan for available Wi-Fi networks (APs).**
       - **If no APs are found:**
@@ -134,12 +138,13 @@ That's of course not counting the time bulding, designing the enclosure and doin
 #### 2.1. **Short Press Button C**:
 - The first alarm time will be displayed.
 - Use **Buttons E (+)** and **F (-)** to adjust the alarm time.
-- Press **Button C** again to either save or proceed:
+- Press **Button C** again to either save save or proceed:
   
 ##### 2.1.1. **Short Press While Alarm Time is Displayed**:
 - Saves the current alarm time and either:
   - **2.1.1.1**: Moves to the next alarm (if one exists), and **2.1.1** is repeated.
-  - **2.1.1.2**: If no next alarm exists, it starts setting up a new alarm. The initial time is set to 12:00, which can be adjusted using **+** or **-** buttons.
+  - **2.1.1.2**: If no more alrms exist, ask if the uers wants to exit the alarm set up or creat a new alarm.
+  - **2.1.1.3**: When new alarm is selected, the initial time is set to 12:00, which can be adjusted using **+** or **-** buttons.
 
 ##### 2.1.2. **Long Press While Alarm Time is Displayed**:
 - Saves the current alarm and exits back to the clock display showing the current time.
@@ -155,7 +160,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 
 ### 3.1. **While an Alarm is Going Off**:
 - **Button A**: Snoozes the alarm for 5 minutes.
-  - The default snooze period can be changed via the mobile web interface or on a per-alarm basis.
+  - The default snooze period can be changed via the mobile web interface and can be on a per-alarm basis.
 - **Button B**: Stops the alarm.
 
 ## 4. **Factory Reset**:
@@ -179,7 +184,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 
 2. **Alarm Management**:
    - Add, edit, or delete alarms.
-   - Set custom times, tones, or actions for each alarm.
+   - Set custom times, tones, snooze time, or actions for each alarm.
 
 3. **Alarm Tone Options**:
    - Choose a built-in alarm tone (default sounds).
@@ -197,6 +202,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
    
 6. **System Management**:
    - **Reboot Clock**: Restart the system if needed.
+   - **System Update check**: Calls home and tries to update the code.
    - **Restore Factory Defaults**: Reset all settings to default, erasing user data.
 
 7. **Easter Eggs**:
@@ -221,6 +227,9 @@ That's of course not counting the time bulding, designing the enclosure and doin
 4. **Alarm Snooze Customization**:
    - Customize snooze intervals for each alarm (e.g., 5 minutes, 10 minutes, 15 minutes).
    - Maybe even change alarm tone based on how many times the snooze has been hit
+
+5. **Update notes**
+   - Include all version history
 
 ## Additional Considerations:
 - **User Feedback**:
@@ -348,7 +357,15 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - [ ] Assemble Raspberry Pi Zero 2 W, e-paper display, ReSpeaker HAT, UPS HAT, buttons, and switches.
 - [ ] Set up Raspberry Pi OS.
 - [ ] Install necessary drivers and libraries for e-paper, audio HAT, and buttons.
+   - [ ] In the ReSpeaker code
+      - [ ] Disable LED code
+      - [ ] Disable I2C code
+      - [ ] Disable Button Code
+   - [ ] In the Epaper code
+      - [ ] Remap GPIO17 (pin 11) to GPIO16 (pin 36)
+      - [ ] Remap GPOI18 (pin
 - [ ] Test each hardware component individually.
+- [ ] Physically remove the LEDs from the ReSpeaker
 
 ### 2. Timekeeping and Display
 - [ ] Set up NTP synchronization for timekeeping.
