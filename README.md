@@ -107,9 +107,9 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - All alarms on/off slider at rear.
 - Snooze/Off on top
    - need to figure out how to make that a large capacitive touch sensor
-   - I think it's possible to hack [these guys](https://www.amazon.ca/Firstrays-TTP223-Capacitance-Unilateral-Transformation/dp/B0DKF12TWX) by scraping the red stuff off of the 2nd image below and soldering some copper shileding on to it - but I don't know - research required.
-     ![image](https://github.com/user-attachments/assets/9314c624-8094-4b4f-976b-6a5b154e38a6)
-     ![image](https://github.com/user-attachments/assets/00454d58-bd56-492b-8a4d-3643f205a4de)
+   - I think it's possible to hack [these guys](https://www.amazon.ca/Firstrays-TTP223-Capacitance-Unilateral-Transformation/dp/B0DKF12TWX) by scraping the red stuff off of the 2nd image below and soldering some copper shileding on to it - but I don't know - research required.  
+     ![image](https://github.com/user-attachments/assets/9314c624-8094-4b4f-976b-6a5b154e38a6)  
+     ![image](https://github.com/user-attachments/assets/00454d58-bd56-492b-8a4d-3643f205a4de)  
      
 
 # Wi-Fi Setup Flowchart
