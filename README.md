@@ -79,6 +79,38 @@ That's of course not counting the time bulding, designing the enclosure and doin
 ![time2](https://github.com/user-attachments/assets/66b1492a-a67d-45c3-8ad7-83b0af6aea52)  
 ![invert](https://github.com/user-attachments/assets/c2e2ae54-4b6a-4836-ab6c-66093f9a3276)  
 
+# Design Concepts
+
+## Stark Architecture
+
+### Top  
+![image](https://github.com/user-attachments/assets/8de2df4a-0cf8-48ae-89b2-bb6582a07ae4)
+
+### Front  
+![image](https://github.com/user-attachments/assets/4f1fef85-6534-43b1-b1a8-e48c2df25789)
+
+### Side  
+![image](https://github.com/user-attachments/assets/bca258cf-5732-4176-aedf-21471c0e39ed)
+
+### Back  
+![image](https://github.com/user-attachments/assets/b4accb12-721b-434f-8fb3-6454d16d0ad6)
+
+### Iso  
+![image](https://github.com/user-attachments/assets/df4c2bb4-4775-4a66-aab8-6636ec5514e9)
+
+### Considerations for this desing
+
+- Capacitive touch sensors for up/down/set
+- Haptic feedback near the buttons
+- Buttons be surrounded by a 0.5mm raised area
+- Buttons be on the side (left or right or both)
+- All alarms on/off slider at rear.
+- Snooze/Off on top
+   - need to figure out how to make that a large capacitive touch sensor
+   - I think it's possible to hack [these guys](https://www.amazon.ca/Firstrays-TTP223-Capacitance-Unilateral-Transformation/dp/B0DKF12TWX) by scraping the red stuff off of the 2nd image below and soldering some copper shileding on to it - but I don't know - research required.
+     ![image](https://github.com/user-attachments/assets/9314c624-8094-4b4f-976b-6a5b154e38a6)
+     ![image](https://github.com/user-attachments/assets/00454d58-bd56-492b-8a4d-3643f205a4de)
+     
 
 # Wi-Fi Setup Flowchart
 
