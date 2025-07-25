@@ -166,7 +166,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - Use **Buttons E (+)** and **F (-)** to adjust the alarm time.
 - Press **Button C** again to either save save or proceed:
   
-##### 2.1.1. **Short Press While Alarm Time is Displayed**:
+##### 2.1.1. **Short Press While Alarm Time is Displayed**: (This needs to be reworked. You don't wantt o have to scroll through 20- alarms just to add a new one)
 - Saves the current alarm time and either:
   - **2.1.1.1**: Moves to the next alarm (if one exists), and **2.1.1** is repeated.
   - **2.1.1.2**: If no more alrms exist, ask if the uers wants to exit the alarm set up or creat a new alarm.
