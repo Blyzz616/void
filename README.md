@@ -98,7 +98,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 ### Iso  
 ![image](https://github.com/user-attachments/assets/df4c2bb4-4775-4a66-aab8-6636ec5514e9)
 
-### Considerations for this desing
+### Considerations for this design
 
 - Capacitive touch sensors for up/down/set
 - Haptic feedback near the buttons
