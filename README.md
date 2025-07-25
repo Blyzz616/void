@@ -151,7 +151,7 @@ That's of course not counting the time bulding, designing the enclosure and doin
 - If the user selects **hidden AP** or **WPS**, allow manual input of AP name/password via the web interface or guide the user through WPS setup (if supported by their router).
 
 ## 5. Completion:
-- **Step 7: On successful connection to Wi-Fi or manual time setup** (in offline mode), display the time and any alarms set on the e-paper screen.
+- **Step 7: On successful connection to Wi-Fi or manual time setup** (in offline mode), display the time and the next queued alarm on the e-paper screen.
   - If Wi-Fi is connected, automatically sync the time via NTP based on the selected locale.
 
 # Daily Operation
